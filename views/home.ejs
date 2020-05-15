@@ -1,0 +1,9 @@
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+<p><%=content%></p>
+
+<%  for(var j=0;j<posts.length;j++)  { %>
+    <h1><%= posts[j].heading%></h1>
+    <p><%=posts[j].truncBody %><a href=<%= posts[j].link%>>Read More</a></p>
+<%  }%>
+<%- include('partials/footer'); -%>
